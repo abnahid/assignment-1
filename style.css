@@ -39,7 +39,7 @@ main section{
 
 #banner {
     height: 652px;
-    background-image: url("/assets/Hero-bg.png");
+    background-image: url("assets/Hero-bg.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -159,4 +159,56 @@ iframe{
     width: 100%;
     height: 775px;
     border-radius: 16px
+}
+
+/* Target Section */
+
+.target-section{
+    margin: 111px 0px;
+}
+.target-container{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.target-title{
+    margin: 0 144px;
+    margin-bottom: 48px;
+}
+.target-box{
+    height: 299px;
+    padding: 40px;
+    border-radius: 16px;
+    background: rgba(255, 76, 30, 0.05);
+}
+.target-box-title{
+    flex: none;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: left;
+    margin: 8px 0px;
+}
+.target-box-description{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    max-width: 470px;
+    margin: 24px 0px;
+}
+.target-box img{
+    margin-bottom: 24px;
+}
+.target-box a {
+    color: var(--text-color1);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    text-decoration-line: underline;
+    margin-top: 24px;
+}
+.color2{
+    background: rgba(0, 76, 232, 0.05);
+}
+.color3{
+    background: rgba(255, 223, 0, 0.05)
 }
