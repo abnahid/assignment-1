@@ -7,6 +7,7 @@
 }
 
 :root {
+    --bg-color: #ffffff;
     --text-color1: #0D1321;
 }
 
@@ -23,6 +24,18 @@
     border: none;
     cursor: pointer;
 }
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main section{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+/* Banner Section */
 
 #banner {
     height: 652px;
@@ -56,9 +69,35 @@
 }
 
 .section-description { 
-    font-size: 32px;
+    font-size: 16px;
     font-weight: 400;
     text-align: center;
     color: var(--text-color1);
     margin-bottom: 32px;
 }
+
+.section-title{
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--text-color1);
+    margin-bottom: 24px;
+}
+
+/*  Web Development */
+
+.blogs{
+    background-color: rgba(13, 19, 33, 0.02);
+    border-radius: 10px;
+    padding: 80px 97px 80px 97px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.blog-container{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    text-align: center;
+}
+
+
