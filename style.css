@@ -431,6 +431,17 @@ footer h3 {
     section, .support-container, .target-section {
         margin: 0 15px;
     }
+
+    #banner {
+        height: auto;
+    }
+    .banner-content {
+        margin: 50px;
+    }
+    .banner-title {
+        font-size: 37px;
+    }
+
     .blogs {
         padding: 40px;
     }
@@ -470,6 +481,8 @@ footer h3 {
         padding: 30px;
     }
 }
+
+
 
 /* Min Laptop */
 @media screen and (min-width: 822px) and (max-width: 1200px) {
