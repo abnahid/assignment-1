@@ -4,72 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ab Nahid</title>
 
     <!-- style link -->
     <link rel="stylesheet" href="style.css">
-    <title>Ab Nahid</title>
+    <link rel="shortcut icon" href="assets/Group.png" type="image/x-icon">
+    
 </head>
 
 <body>
-
-    <header id="banner">
-        <!-- header section -->
-        <div class="banner-content">
-            <img src="assets/Group.png" alt="main-logo">
-            <h1 class="banner-title">"In the near future, I hope to become a Developer."</h1>
-            <p class="section-description">Aspiring developer aiming to craft innovative software solutions, combining
-                creativity and technical expertise to solve real-world problems and drive technological advancement.</p>
-            <div class="btn-container">
-                <a href='#footer'><button class="btn">Contact with me</button></a>
-            </div>
+    <header class="hide">
+        <nav>
+            <h3 class="nav-title">Ab <span>Nahid</span> </h3>
+            <ul>
+                <li><a href="#inspiration">Inspiration</a></li>
+                <li><a href="#target">Target</a></li>
+                <li><a href="https://abnahid.com" target="_blank"><button class="nav-btn">Hire Me</button></a></li>
+            </ul>
+        </nav>
+        <div id="banner" >
+            <!-- header section -->
+            <div class="banner-content">
+                <img src="assets/Group.png" alt="main-logo">
+                <h1 class="banner-title">"In the near future, I hope to become a Developer."</h1>
+                <p class="section-description">Aspiring developer aiming to craft innovative software solutions, combining
+                    creativity and technical expertise to solve real-world problems and drive technological advancement.</p>
+                <div class="btn-container">
+                    <a href='#footer'><button class="btn">Contact with me</button></a>
+                </div>
+        </div>
     </header>
     <main>
         <!-- Blog section -->
         <section class="blogs">
-            <h3 class="section-title">Why Web Development??</h3>
-            <p class="section-description">
-                Web development enables creative expression and problem-solving, offering endless opportunities to build
-                impactful, user-friendly digital experiences and connect with a global audience.</p>
+                <h3 class="section-title">Why Web Development??</h3>
+                <p class="section-description">
+                    Web development enables creative expression and problem-solving, offering endless opportunities to build
+                    impactful, user-friendly digital experiences and connect with a global audience.</p>
             <div class="blog-container">
                 <div class="blog-right">
                     <h3 class="blog-title">I will Do Coding and Change The World</h3>
                     <p class="blog-description">Empowered by code, I aim to revolutionize the world with innovative
                         solutions and impactful technological advancements.</p>
-                        <button class="blog-btn">Learn More</button>
-                    </div>
-                    <div class="blog-left">
-                        <img src="assets/group 2.png" alt="Group 2">
-                    </div>
+                    <button class="blog-btn">Learn More</button>
                 </div>
-            <div class="blog-container">
                 <div class="blog-left">
-                <img src="assets/Group 3.png" alt="Group 3">
+                    <img src="assets/group 2.png" alt="Group 2">
+                </div>
+            </div>
+            <div class="blog-container2">
+                <div class="blog-left">
+                    <img src="assets/Group 3.png" alt="Group 3">
                 </div>
                 <div class="blog-right">
-                <h3 class="blog-title">I will help People by creating Modern Web System</h3>
-                <p class="blog-description">Delivering innovative digital solutions that engage and empower
-                    people
-                    through user-centric design and innovation.</p>
-                <button class="blog-btn">Learn More</button>
+                    <h3 class="blog-title">I will help People by creating Modern Web System</h3>
+                    <p class="blog-description">Delivering innovative digital solutions that engage and empower
+                        people
+                        through user-centric design and innovation.</p>
+                    <button class="blog-btn">Learn More</button>
                 </div>
             </div>
             <div class="blog-container">
                 <div class="blog-right">
                     <h3 class="blog-title">Modern web systems empower people</h3>
                     <p class="blog-description">Offering seamless, efficient, and accessible digital experiences
-                        through
-                        the design and development of innovative web systems.</p>
-                        <button class="blog-btn">Learn More</button>
-                    </div>
-                    <div class="blog-left">
-                        <img src="assets/Group 4.png" alt="Group 4">
-                    </div>
+                        through the design and development of innovative web systems.</p>
+                    <button class="blog-btn">Learn More</button>
+                </div>
+                <div class="blog-left">
+                    <img src="assets/Group 4.png" alt="Group 4">
+                </div>
             </div>
         </section>
 
         <!-- Video Section  -->
 
-        <section class="video-section">
+        <section class="video-section" id="inspiration">
             <div class="video-title">
                 <h1 class="section-title">My Inspiration</h1>
                 <p class="section-description">Inspired by Jhankar Mahbub, I aspire to become a developer who creates
@@ -83,7 +93,7 @@
         </section>
 
         <!-- Target Section-->
-        <section class="target-section">
+        <section class="target-section" id="target">
             <div class="target-title">
                 <h1 class="section-title">My Current Target</h1>
                 <p class="section-description">To become a skilled developer, mastering web development to create
@@ -118,27 +128,31 @@
         <!-- Support Section -->
         <section class="support-container">
             <div class="support-content">
-                <div class="support-text">
-                    <h1 class="section-title">I need Support</h1>
-                    <p class="section-description">I seek support to become a skilled developer, aiming to master web
+                <div class="support-text ">
+                    <h1 class="support-title">I need Support</h1>
+                    <p class="support-description">I seek support to become a skilled developer, aiming to master web
                         development and create impactful, efficient systems that improve lives.</p>
                 </div>
-                <div class="submit-text">
+                <form class="submit-text">
                     <input type="text" placeholder="Suggest me any feedback for me">
-                    <input type="submit" value="submit" class="submit-btn">
-                </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-section">
-            <h3 class="footer-title">An Open Commitment by Ab Nahid</h3>
+    <footer id="footer">
+            <h3 class="footer-title">&copy; 2024 design by Ab Nahid</h3>
             <div class="footer-icon">
-                <img src="assets/facebook.png" alt="">
-                <img src="assets/github.png" alt="">
-                <img src="assets/linkedin-icon 1.png" alt="">
+                <a href="https://www.facebook.com/abnahidagency" target="_blank">
+                    <img src="assets/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://github.com/abnahid" target="_blank">
+                    <img src="assets/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/ajnahid" target="_blank">
+                    <img src="assets/linkedin-icon 1.png" alt="LinkedIn">
+                </a>
             </div>
-        </div>
     </footer>
 </body>
 

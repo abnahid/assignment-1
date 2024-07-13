@@ -2,8 +2,10 @@
 
 * {
     margin: 0;
-    padding: 0;
     font-family: "Azeret Mono", monospace;
+    list-style: none;
+	text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -33,6 +35,43 @@ main{
 main section{
     margin-top: 130px;
     margin-bottom: 130px;
+}
+
+/* Navigation Section */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 100px;
+}
+nav .nav-title{
+    font-weight: 800;
+    font-size: 28px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+   
+}
+nav ul li{
+    list-style: none; 
+    margin-right: 51px;
+}
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--text-color2);
+}
+
+.nav-btn{
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    opacity: 0.8;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid rgb(13, 19, 33);
+    padding: 17px 24px 17px 24px;
 }
 
 /* Banner Section */
@@ -96,16 +135,33 @@ main section{
 
 .blog-container{
     display: flex;
+    justify-content: space-between;
     border-radius: 16px;
     background: linear-gradient(90.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
     padding: 48px;
     margin: 32px 0px;
 }
-.blog-left{
-align-self: center;
+.blog-container2{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+    background: linear-gradient(270.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
+    padding: 48px;
+    margin: 32px 0px;
 }
+.blog-left{
+    position: relative;
+    width: 240px;
+    height: 240px;
+    align-self: center;
+    padding: 27px 0;
+}
+
 .blog-right{
+    width: 477px;
+    margin: 0px 10px;
     text-align: left;
+    margin-right: 133px;
 }
 .blog-title{
     font-size: 24px;
@@ -119,12 +175,12 @@ align-self: center;
     font-size: 16px;
     font-weight: 400;
     text-align: left;
-    margin: 16px 0px;
+    margin: 32px 0px;
     opacity: 0.7;
 }
 
 .blog-btn{
-    margin: 32px 0px;
+    margin-top: 32px;
     box-sizing: border-box;
     border: 1px solid rgb(13, 19, 33);
     color: var(--text-color1);
@@ -214,7 +270,7 @@ iframe{
     background: rgba(255, 223, 0, 0.05)
 }
 
-/* Support Sectio */
+/* Support Section */
 .support-container{
     max-width: 1320px;
     margin: 0 auto;
@@ -241,8 +297,20 @@ iframe{
     margin: 24px 157px;
     color: var(--bg-color);
 }
-.support-text h3 {
-    color: rgb(255, 255, 255);
+.support-description { 
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--bg-color);
+    margin-bottom: 32px;
+}
+
+.support-title{
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--bg-color);
+    margin-bottom: 24px;
 }
 .submit-text input[type="text"]{
     width: 548px;
@@ -254,17 +322,21 @@ iframe{
     padding: 19px 20px 19px 20px;
 }
 .submit-btn{
+    font-size: 20px;
+    font-weight: 600;
     width: 120px;
     padding: 17px 20px 17px 20px;
+    border: none;
     border-radius: 8px;
     background: rgb(255, 255, 255);
+    text-align: center;
 }
 
 /* Footer Section */
 footer{
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: space-between; */
+    justify-content: space-between;
     margin-top: 130px;
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.03);
@@ -276,7 +348,168 @@ footer h3 {
     font-weight: 600;
 }
 
-/* footer .footer-title{
-    font-weight: 800;
-    font-size: 45px;
-} */
+.footer-icon img{
+    width: 36px;
+    height: 36px;
+    gap: 24px;
+}
+
+
+/* Smell Mobile View  */
+@media screen and (max-width: 576px) {  
+    main {
+        margin: 0 auto; 
+    }
+    section, .support-container, .target-section {
+        margin: 0 15px;
+    }
+    .support-container{
+        margin-top: 120px;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        height: auto;
+    }
+    .banner-content {
+        margin: 20px;
+    }
+    .banner-title {
+        font-size: 35px;
+    }
+    .blogs {
+        padding: 25px;
+        margin-top: 85px;
+    }
+    .blog-container, .blog-container2 {
+        flex-direction: column-reverse;
+        background: linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+    }
+    .blog-right {
+        width: auto;
+        margin: 15px;
+    }
+    .section-description {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .video-title, .target-title{
+        margin: 0 60px;
+    }
+    iframe {
+        width: calc(100% - 20px);
+        height: 300px;
+    }
+    .target-container {
+        flex-direction: column;
+    }
+    .support-text{
+        width: auto;
+        margin: auto;
+    }
+    .submit-text input[type="text"]{
+        width: auto;
+    }
+    footer {
+        padding: 20px;
+    }
+}
+
+/* Min - Tap View  */
+@media screen and (min-width: 577px) and (max-width: 821px) {
+    main {
+        margin: 0 auto; 
+    }
+    nav {
+        display: none;
+    }
+    section, .support-container, .target-section {
+        margin: 0 15px;
+    }
+    .blogs {
+        padding: 40px;
+    }
+    .blog-container, .blog-container2 {
+        padding: 32px;
+    }
+    .banner-content {
+        margin: 20px 100px;
+    }
+    .target-box {
+        height: auto;
+        padding: 20px;
+        margin-bottom: 60px;
+    }
+    .banner-title {
+        font-size: 42px;
+    }
+    .blog-right {
+        width: auto;
+        margin: 10px;
+    }
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .support-text {
+        width: auto;
+        margin: auto;
+    }
+    iframe {
+        height: 500px;
+    }
+    .submit-text input[type="text"]{
+        width: 328px;
+    }
+    footer {
+        padding: 30px;
+    }
+}
+
+/* Min Laptop */
+@media screen and (min-width: 822px) and (max-width: 1200px) {
+    main {
+        margin: 0 auto; 
+    }
+    section, .support-container, .target-section {
+        margin: 0 30px;
+    }
+    .support-container{
+        margin-top: 120px;
+    }
+    .target-box {
+        height: auto;
+        padding: 20px;
+    }
+    .blogs {
+        padding: 50px;
+    }
+    .blog-container, .blog-container2 {
+        padding: 40px;
+    }
+    .banner-content {
+        margin: 20px 150px;
+    }
+    .banner-title {
+        font-size: 45px;
+    }
+    .blog-right {
+        width: 60%;
+        margin: 20px;
+    }
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 22px;
+    }
+    iframe {
+        height: 600px;
+    }
+    footer {
+        padding: 40px;
+    }
+}
