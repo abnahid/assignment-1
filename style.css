@@ -484,7 +484,7 @@ footer h3 {
 
 
 
-/* Min Laptop */
+/* Min Laptop  view */
 @media screen and (min-width: 822px) and (max-width: 1200px) {
     main {
         margin: 0 auto; 
